@@ -15,5 +15,6 @@ describe 'search' do
   end
   it "find the middle item" do
     expect(search([1,2,3],2)).to eq(1)
+    expect(search([2,3,4],1)).to eq(-1)
   end
 end
