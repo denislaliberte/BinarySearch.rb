@@ -6,9 +6,9 @@ def search(array,item)
   elsif array.length <=1
    -1
   elsif item < array[middleIndex]
-    search(array[0..middleIndex-1],item)
+    search(array[0..middleIndex-1], item)
   elsif item > array[middleIndex]
-    upperIndex = search(array[middleIndex..-1],item)
+    upperIndex = search(array[middleIndex..-1], item)
     if(upperIndex == -1)
       upperIndex
     else
