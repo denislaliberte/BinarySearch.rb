@@ -1,20 +1,21 @@
 
 def search(array,item)
   if array.empty? 
-    return -1
+    -1
   end
   middleIndex = array.length / 2
   if array[middleIndex] == item
-    return middleIndex
+    middleIndex
   elsif middleIndex == 0
-    return -1
+   -1
   elsif item < array[middleIndex]
-    return search(array[0..middleIndex-1],item)
+    search(array[0..middleIndex-1],item)
   elsif item > array[middleIndex]
     asdf = search(array[middleIndex..-1],item)
     if(asdf != -1)
-      return middleIndex + asdf
+      middleIndex + asdf
+    else
+      -1
     end
   end
-  -1
 end
