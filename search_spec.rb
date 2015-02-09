@@ -10,5 +10,6 @@ describe 'search' do
   end
   it "return the first index on one item list" do
     expect(search([1],1)).to eq(0)
+    expect(search([1],2)).to eq(-1)
   end
 end

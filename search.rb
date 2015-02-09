@@ -1,8 +1,8 @@
 
 def search(array,item)
-  if array.empty?
-    -1
-  else
+  if not array.empty? and array.first == item
     0
+  else
+    -1
   end
 end
