@@ -6,7 +6,7 @@ def search(array,item)
   middleIndex = array.length / 2
   if array[middleIndex] == item
     middleIndex
-  elsif middleIndex == 0
+  elsif array.length <=1
    -1
   elsif item < array[middleIndex]
     search(array[0..middleIndex-1],item)
