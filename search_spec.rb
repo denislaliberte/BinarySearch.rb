@@ -12,4 +12,7 @@ describe 'search' do
     expect(search([1],1)).to eq(0)
     expect(search([1],2)).to eq(-1)
   end
+  it "find the middle item" do
+    expect(search([1,2,3],2)).to eq(1)
+  end
 end
