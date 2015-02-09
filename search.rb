@@ -1,4 +1,8 @@
 
 def search(array,item)
-  return -1
+  if array.empty?
+    -1
+  else
+    0
+  end
 end
