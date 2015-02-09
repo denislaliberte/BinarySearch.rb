@@ -17,4 +17,7 @@ describe 'search' do
     expect(search([1,2,3],2)).to eq(1)
     expect(search([2,3,4],1)).to eq(-1)
   end
+  it "return the last item" do
+    expect(search([1,2,3],3)).to eq(2)
+  end
 end

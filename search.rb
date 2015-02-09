@@ -6,6 +6,8 @@ def search(array,item)
       return middleIndex
     elsif item < array[middleIndex] and middleIndex != 0
       return search(array[0..middleIndex-1],item)
+    elsif item > array[middleIndex] and middleIndex != 0
+      return middleIndex + search(array[middleIndex..-1],item)
     end
   end 
   -1
