@@ -11,9 +11,9 @@ def search(array,item)
   elsif item < array[middleIndex]
     search(array[0..middleIndex-1],item)
   elsif item > array[middleIndex]
-    asdf = search(array[middleIndex..-1],item)
-    if(asdf != -1)
-      middleIndex + asdf
+    upperIndex = search(array[middleIndex..-1],item)
+    if(upperIndex != -1)
+      middleIndex + upperIndex
     else
       -1
     end
