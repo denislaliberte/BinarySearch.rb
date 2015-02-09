@@ -1,8 +1,5 @@
 
 def search(array,item)
-  if array.empty? 
-    -1
-  end
   middleIndex = array.length / 2
   if array[middleIndex] == item
     middleIndex
