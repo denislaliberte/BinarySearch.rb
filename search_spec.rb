@@ -20,4 +20,10 @@ describe 'search' do
   it "return the last item" do
     expect(search([1,2,3],3)).to eq(2)
   end
+  it "find index in more case" do
+    expect(search([1,2,3,4,5],4)).to eq(3)
+    expect(search([1,2,3,4,5],2)).to eq(1)
+    expect(search([1,2,3,4,5],-4)).to eq(-1)
+    expect(search([1,2,3,4,5],6)).to eq(-1)
+  end
 end

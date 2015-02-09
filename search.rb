@@ -7,7 +7,12 @@ def search(array,item)
     elsif item < array[middleIndex] and middleIndex != 0
       return search(array[0..middleIndex-1],item)
     elsif item > array[middleIndex] and middleIndex != 0
-      return middleIndex + search(array[middleIndex..-1],item)
+      asdf = search(array[middleIndex..-1],item)
+      if(asdf != -1)
+        return middleIndex + asdf
+      else
+        return asdf
+      end
     end
   end 
   -1
