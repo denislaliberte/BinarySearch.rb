@@ -10,8 +10,6 @@ def search(array,item)
       asdf = search(array[middleIndex..-1],item)
       if(asdf != -1)
         return middleIndex + asdf
-      else
-        return asdf
       end
     end
   end 
